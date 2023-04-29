@@ -20,8 +20,8 @@
 проверять результат.
 """
 
-command1 = "switchport trunk allowed vlan 1,2,3,5,8"
-command2 = "switchport trunk allowed vlan 1,3,8,9"
+command1 = "switchports trunk allowed vlan 1,2,3,5,8"
+command2 = "switchports trunk allowed vlan 1,3,8,9"
 _1 = command1.split()
 _2 = command2.split()
 r1 = set(list(_1[-1]))
