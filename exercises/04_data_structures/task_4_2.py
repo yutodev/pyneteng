@@ -15,5 +15,6 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+print('I did it')
 mac = mac.replace(':', '.')
 print(mac)
