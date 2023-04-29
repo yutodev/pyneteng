@@ -22,3 +22,11 @@
 
 command1 = "switchport trunk allowed vlan 1,2,3,5,8"
 command2 = "switchport trunk allowed vlan 1,3,8,9"
+_1 = command1.split()
+_2 = command2.split()
+r1 = set(list(_1[-1]))
+r2 = set(list(_2[-1]))
+result = sorted(list(r1.intersection(r2)))
+while ',' in result:
+    result.remove(',')
+print(result)
